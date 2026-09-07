@@ -6,6 +6,7 @@ import { ProfilePhotoCard } from './ProfilePhotoCard';
 import { ArchitectureStage } from './ArchitectureStage';
 import { FloodActionButton } from './FloodActionButton';
 import { RebuildConstructionOverlay } from './RebuildConstructionOverlay';
+import { profileData } from '../../data/portfolioData';
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -159,7 +160,7 @@ export const EditorialProfile: React.FC = () => {
               Profil &amp; Keahlian
             </span>
             <h2 className="text-3xl sm:text-5xl font-black text-[#0f172a] tracking-tight leading-[1.08]">
-              Fullstack &amp; Mobile Developer
+              {profileData.tagline}
             </h2>
           </div>
 
@@ -172,7 +173,7 @@ export const EditorialProfile: React.FC = () => {
             />
 
             <p className="max-w-xs text-xs text-[#475569] leading-relaxed">
-              Berpengalaman mengembangkan aplikasi web skala penuh, aplikasi mobile, arsitektur database, serta manajemen infrastruktur Linux.
+              Memiliki pemahaman kuat dalam pengembangan aplikasi web (front end &amp; back end), arsitektur MVC Laravel, integrasi REST API, dan basis data relasional MySQL.
             </p>
           </div>
         </motion.div>

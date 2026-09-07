@@ -20,18 +20,27 @@ interface LetterData {
 }
 
 const INITIAL_LETTERS: Omit<LetterData, 'posX' | 'posY' | 'wobble'>[] = [
-  { id: 'r1', char: 'R', wordIdx: 0, letterIdx: 0 },
+  // SEHANDIKI (word 0)
+  { id: 's1', char: 'S', wordIdx: 0, letterIdx: 0 },
   { id: 'e1', char: 'E', wordIdx: 0, letterIdx: 1 },
-  { id: 'y1', char: 'Y', wordIdx: 0, letterIdx: 2 },
-  { id: 'h1', char: 'H', wordIdx: 0, letterIdx: 3 },
-  { id: 'a1', char: 'A', wordIdx: 0, letterIdx: 4 },
-  { id: 'n1', char: 'N', wordIdx: 0, letterIdx: 5 },
-  { id: 'd1', char: 'D', wordIdx: 0, letterIdx: 6 },
-  { id: 'a2', char: 'A', wordIdx: 1, letterIdx: 0 },
-  { id: 's1', char: 'S', wordIdx: 1, letterIdx: 1 },
-  { id: 't1', char: 'T', wordIdx: 1, letterIdx: 2 },
-  { id: 'r2', char: 'R', wordIdx: 1, letterIdx: 3 },
-  { id: 'a3', char: 'A', wordIdx: 1, letterIdx: 4 },
+  { id: 'h1', char: 'H', wordIdx: 0, letterIdx: 2 },
+  { id: 'a1', char: 'A', wordIdx: 0, letterIdx: 3 },
+  { id: 'n1', char: 'N', wordIdx: 0, letterIdx: 4 },
+  { id: 'd1', char: 'D', wordIdx: 0, letterIdx: 5 },
+  { id: 'i1', char: 'I', wordIdx: 0, letterIdx: 6 },
+  { id: 'k1', char: 'K', wordIdx: 0, letterIdx: 7 },
+  { id: 'i2', char: 'I', wordIdx: 0, letterIdx: 8 },
+
+  // TRIANSYAH (word 1)
+  { id: 't1', char: 'T', wordIdx: 1, letterIdx: 0 },
+  { id: 'r1', char: 'R', wordIdx: 1, letterIdx: 1 },
+  { id: 'i3', char: 'I', wordIdx: 1, letterIdx: 2 },
+  { id: 'a2', char: 'A', wordIdx: 1, letterIdx: 3 },
+  { id: 'n2', char: 'N', wordIdx: 1, letterIdx: 4 },
+  { id: 's2', char: 'S', wordIdx: 1, letterIdx: 5 },
+  { id: 'y1', char: 'Y', wordIdx: 1, letterIdx: 6 },
+  { id: 'a3', char: 'A', wordIdx: 1, letterIdx: 7 },
+  { id: 'h2', char: 'H', wordIdx: 1, letterIdx: 8 },
 ];
 
 interface HeroPhysicsStageProps {
@@ -291,7 +300,7 @@ export const HeroPhysicsStage = forwardRef<HeroPhysicsStageHandle, HeroPhysicsSt
           }}
           whileHover={{ scale: 1.12 }}
           whileTap={{ scale: 1.25 }}
-          className="relative inline-block cursor-grab active:cursor-grabbing select-none p-1 sm:p-2.5 mx-0.5 sm:mx-1.5 md:mx-2.5 pointer-events-auto"
+          className="relative inline-block cursor-grab active:cursor-grabbing select-none p-0.5 sm:p-1.5 md:p-2 mx-0 sm:mx-0.5 md:mx-1 pointer-events-auto"
         >
           <motion.div
             animate={
@@ -314,25 +323,25 @@ export const HeroPhysicsStage = forwardRef<HeroPhysicsStageHandle, HeroPhysicsSt
             <div className="absolute -bottom-3 left-2 right-2 h-3 bg-[#0284c7]/50 rounded-full blur-[3px]" />
 
             <span
-              className="absolute top-1 sm:top-2 left-0.5 text-[40px] min-[390px]:text-[48px] sm:text-7xl md:text-8xl font-black text-[#041628] tracking-tight select-none pointer-events-none"
+              className="absolute top-1 sm:top-2 left-0.5 text-[28px] min-[380px]:text-[34px] sm:text-6xl md:text-7xl font-black text-[#041628] tracking-tight select-none pointer-events-none"
               aria-hidden="true"
             >
               {letter.char}
             </span>
             <span
-              className="absolute top-0.5 sm:top-1.5 left-0.5 text-[40px] min-[390px]:text-[48px] sm:text-7xl md:text-8xl font-black text-[#0369a1] tracking-tight select-none pointer-events-none"
+              className="absolute top-0.5 sm:top-1.5 left-0.5 text-[28px] min-[380px]:text-[34px] sm:text-6xl md:text-7xl font-black text-[#0369a1] tracking-tight select-none pointer-events-none"
               aria-hidden="true"
             >
               {letter.char}
             </span>
             <span
-              className="absolute top-0.5 left-0 text-[40px] min-[390px]:text-[48px] sm:text-7xl md:text-8xl font-black text-[#0284c7] tracking-tight select-none pointer-events-none"
+              className="absolute top-0.5 left-0 text-[28px] min-[380px]:text-[34px] sm:text-6xl md:text-7xl font-black text-[#0284c7] tracking-tight select-none pointer-events-none"
               aria-hidden="true"
             >
               {letter.char}
             </span>
 
-            <span className="relative z-10 block text-[40px] min-[390px]:text-[48px] sm:text-7xl md:text-8xl font-black text-white tracking-tight drop-shadow-[0_6px_16px_rgba(2,132,199,0.35)]">
+            <span className="relative z-10 block text-[28px] min-[380px]:text-[34px] sm:text-6xl md:text-7xl font-black text-white tracking-tight drop-shadow-[0_6px_16px_rgba(2,132,199,0.35)]">
               {letter.char}
             </span>
           </motion.div>

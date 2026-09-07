@@ -103,7 +103,7 @@ export const ProjectCaseStudyModal: React.FC<ProjectCaseStudyModalProps> = ({
           {/* preview frame */}
           <ProjectPreviewPlaceholder
             project={project}
-            isMobileFrame={project.category === 'mobile'}
+            isMobileFrame={false}
             className="aspect-[16/10] w-full max-h-[340px]"
           />
 

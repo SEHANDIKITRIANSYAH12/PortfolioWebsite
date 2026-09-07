@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BrandLogo } from '../common/BrandLogo';
+import { profileData } from '../../data/portfolioData';
 
 interface WelcomeAnimationProps {
   onComplete: () => void;
@@ -162,8 +163,8 @@ export const WelcomeAnimation = ({ onComplete }: WelcomeAnimationProps) => {
               <BrandLogo size="xl" />
             </motion.div>
 
-            <h1 className="text-4xl sm:text-6xl font-black text-white tracking-widest uppercase drop-shadow-[0_8px_24px_rgba(0,0,0,0.35)]">
-              REYHAND ASTRA
+            <h1 className="text-3xl sm:text-5xl font-black text-white tracking-widest uppercase drop-shadow-[0_8px_24px_rgba(0,0,0,0.35)]">
+              {profileData.name.toUpperCase()}
             </h1>
             <p className="mt-3 text-sm sm:text-base font-semibold tracking-widest text-[#fff9d4] uppercase drop-shadow-md">
               Diving into Portfolio

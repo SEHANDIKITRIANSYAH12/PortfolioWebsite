@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="apiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <filter id="brutalShadow3" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="4" dy="4" stdDeviation="0" flood-color="#0284c7" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="500" fill="url(#apiBg)" />
+
+  <!-- Top Navigation -->
+  <rect x="30" y="25" width="740" height="50" rx="12" fill="#fffdf5" stroke="#0284c7" stroke-width="3" />
+  <circle cx="60" cy="50" r="7" fill="#ef4444" stroke="#0f172a" stroke-width="2" />
+  <circle cx="82" cy="50" r="7" fill="#fde047" stroke="#0f172a" stroke-width="2" />
+  <circle cx="104" cy="50" r="7" fill="#22c55e" stroke="#0f172a" stroke-width="2" />
+  <text x="135" y="55" font-family="monospace" font-size="13" font-weight="900" fill="#0f172a">BACKEND REST API &amp; DATABASE SERVICES</text>
+  <rect x="610" y="37" width="140" height="26" rx="6" fill="#22c55e" stroke="#0f172a" stroke-width="2" />
+  <text x="625" y="54" font-family="monospace" font-size="11" font-weight="900" fill="#ffffff">STATUS: 200 OK</text>
+
+  <!-- Left: Endpoints & Postman View -->
+  <rect x="30" y="95" width="450" height="375" rx="16" fill="#1e293b" stroke="#334155" stroke-width="2" />
+  <rect x="30" y="95" width="450" height="42" rx="16" fill="#0f172a" stroke="#334155" stroke-width="2" />
+  <text x="50" y="122" font-family="monospace" font-size="12" font-weight="900" fill="#38bdf8">API ENDPOINTS TESTING &amp; ROUTING</text>
+
+  <!-- Endpoint 1 -->
+  <g transform="translate(50, 150)">
+    <rect width="410" height="48" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <rect x="10" y="10" width="55" height="26" rx="4" fill="#22c55e" />
+    <text x="22" y="27" font-family="monospace" font-size="11" font-weight="900" fill="#ffffff">GET</text>
+    <text x="75" y="27" font-family="monospace" font-size="12" font-weight="700" fill="#f8fafc">/api/v1/warga/layanan</text>
+    <rect x="345" y="14" width="55" height="20" rx="4" fill="#1e293b" />
+    <text x="352" y="28" font-family="monospace" font-size="10" fill="#4ade80">200 OK</text>
+  </g>
+
+  <!-- Endpoint 2 -->
+  <g transform="translate(50, 210)">
+    <rect width="410" height="48" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <rect x="10" y="10" width="55" height="26" rx="4" fill="#3b82f6" />
+    <text x="18" y="27" font-family="monospace" font-size="11" font-weight="900" fill="#ffffff">POST</text>
+    <text x="75" y="27" font-family="monospace" font-size="12" font-weight="700" fill="#f8fafc">/api/v1/pos/transaksi</text>
+    <rect x="345" y="14" width="55" height="20" rx="4" fill="#1e293b" />
+    <text x="350" y="28" font-family="monospace" font-size="10" fill="#38bdf8">201 CREATED</text>
+  </g>
+
+  <!-- Endpoint 3 -->
+  <g transform="translate(50, 270)">
+    <rect width="410" height="48" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <rect x="10" y="10" width="55" height="26" rx="4" fill="#eab308" />
+    <text x="22" y="27" font-family="monospace" font-size="11" font-weight="900" fill="#0f172a">PUT</text>
+    <text x="75" y="27" font-family="monospace" font-size="12" font-weight="700" fill="#f8fafc">/api/v1/pos/produk/{id}/stok</text>
+    <rect x="345" y="14" width="55" height="20" rx="4" fill="#1e293b" />
+    <text x="352" y="28" font-family="monospace" font-size="10" fill="#fde047">200 OK</text>
+  </g>
+
+  <!-- Endpoint 4 -->
+  <g transform="translate(50, 330)">
+    <rect width="410" height="48" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.5" />
+    <rect x="10" y="10" width="55" height="26" rx="4" fill="#ef4444" />
+    <text x="14" y="27" font-family="monospace" font-size="10" font-weight="900" fill="#ffffff">DELETE</text>
+    <text x="75" y="27" font-family="monospace" font-size="12" font-weight="700" fill="#f8fafc">/api/v1/admin/pengumuman/{id}</text>
+    <rect x="345" y="14" width="55" height="20" rx="4" fill="#1e293b" />
+    <text x="350" y="28" font-family="monospace" font-size="10" fill="#f87171">204 NO_CONTENT</text>
+  </g>
+
+  <g transform="translate(50, 395)">
+    <rect width="410" height="55" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1.5" />
+    <text x="15" y="22" font-family="monospace" font-size="10" font-weight="700" fill="#38bdf8">ARCHITECTURE: OOP • MVC • RESTful API Standard</text>
+    <text x="15" y="40" font-family="monospace" font-size="9.5" fill="#94a3b8">Laravel (PHP) | Node.js (Express) | Java (Spring Boot) | Postman</text>
+  </g>
+
+  <!-- Right: JSON Response & DB Schema -->
+  <rect x="500" y="95" width="270" height="375" rx="16" fill="#fffdf5" stroke="#0f172a" stroke-width="3" />
+  <rect x="500" y="95" width="270" height="42" rx="16" fill="#fde047" stroke="#0f172a" stroke-width="3" />
+  <text x="520" y="122" font-family="monospace" font-size="12" font-weight="900" fill="#0f172a">RESPONSE PAYLOAD (JSON)</text>
+
+  <!-- Code Block -->
+  <g transform="translate(515, 150)">
+    <text x="0" y="15" font-family="monospace" font-size="11" fill="#0284c7">{"status":</text>
+    <text x="80" y="15" font-family="monospace" font-size="11" font-weight="700" fill="#16a34a">"success",</text>
+
+    <text x="0" y="35" font-family="monospace" font-size="11" fill="#0284c7">"code":</text>
+    <text x="55" y="35" font-family="monospace" font-size="11" font-weight="700" fill="#d97706">200,</text>
+
+    <text x="0" y="55" font-family="monospace" font-size="11" fill="#0284c7">"data": {</text>
+
+    <text x="15" y="75" font-family="monospace" font-size="10.5" fill="#475569">"id":</text>
+    <text x="55" y="75" font-family="monospace" font-size="10.5" fill="#0f172a">"TX-9901",</text>
+
+    <text x="15" y="95" font-family="monospace" font-size="10.5" fill="#475569">"items_count":</text>
+    <text x="110" y="95" font-family="monospace" font-size="10.5" fill="#d97706">5,</text>
+
+    <text x="15" y="115" font-family="monospace" font-size="10.5" fill="#475569">"total_amount":</text>
+    <text x="115" y="115" font-family="monospace" font-size="10.5" font-weight="700" fill="#0f172a">95460,</text>
+
+    <text x="15" y="135" font-family="monospace" font-size="10.5" fill="#475569">"database":</text>
+    <text x="95" y="135" font-family="monospace" font-size="10.5" font-weight="700" fill="#0284c7">"MySQL InnoDB"</text>
+
+    <text x="0" y="155" font-family="monospace" font-size="11" fill="#0284c7">}}</text>
+  </g>
+
+  <!-- Database Badges below -->
+  <g transform="translate(515, 320)">
+    <rect width="240" height="135" rx="10" fill="#f8fafc" stroke="#0f172a" stroke-width="2" />
+    <text x="12" y="24" font-family="monospace" font-size="11" font-weight="900" fill="#0f172a">DATABASE ENGINES:</text>
+
+    <rect x="12" y="38" width="100" height="24" rx="6" fill="#0284c7" />
+    <text x="22" y="54" font-family="monospace" font-size="10" font-weight="900" fill="#ffffff">🐬 MySQL</text>
+
+    <rect x="122" y="38" width="105" height="24" rx="6" fill="#2563eb" />
+    <text x="130" y="54" font-family="monospace" font-size="10" font-weight="900" fill="#ffffff">🐘 PostgreSQL</text>
+
+    <rect x="12" y="70" width="100" height="24" rx="6" fill="#16a34a" />
+    <text x="20" y="86" font-family="monospace" font-size="10" font-weight="900" fill="#ffffff">🍃 MongoDB</text>
+
+    <rect x="122" y="70" width="105" height="24" rx="6" fill="#f97316" />
+    <text x="134" y="86" font-family="monospace" font-size="10" font-weight="900" fill="#ffffff">⚡ Postman</text>
+
+    <text x="14" y="118" font-family="monospace" font-size="9" fill="#64748b">ACID Transactions &amp; Schema Design</text>
+  </g>
+</svg>

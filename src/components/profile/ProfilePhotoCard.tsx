@@ -45,7 +45,7 @@ export const ProfilePhotoCard: React.FC<ProfilePhotoCardProps> = ({ isFlooded })
             className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              target.src = '/avatar.svg';
+              target.src = '/projects/sehanavatar.jpeg';
             }}
           />
 
@@ -63,7 +63,7 @@ export const ProfilePhotoCard: React.FC<ProfilePhotoCardProps> = ({ isFlooded })
 
         <div className="mt-3 px-2 flex items-center justify-between text-[11px] font-mono text-[#8c6239]">
           <span>FOTO PROFIL</span>
-          <span>ID // REYHAND ASTRA</span>
+          <span>ID // {profileData.name.toUpperCase()}</span>
         </div>
       </div>
 
@@ -74,9 +74,9 @@ export const ProfilePhotoCard: React.FC<ProfilePhotoCardProps> = ({ isFlooded })
       >
         <div className="flex items-center gap-2">
           <MapPin className="w-4 h-4 text-[#8c6239]" />
-          <span>Indonesia</span>
+          <span>{profileData.contact.location}</span>
         </div>
-        <span className="text-[#0284c7] font-bold">Linux Enthusiasts</span>
+        <span className="text-[#0284c7] font-bold">Web Developer</span>
       </motion.div>
     </motion.div>
   );

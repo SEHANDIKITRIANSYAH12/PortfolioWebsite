@@ -63,7 +63,7 @@ export const ContactSection: React.FC = () => {
   const mailtoLink = `mailto:${profileData.contact.email}?subject=${encodeURIComponent(
     selectedTopic.subject
   )}&body=${encodeURIComponent(
-    `Halo Reyhand,\n\nSaya ingin berdiskusi mengenai topik: ${selectedTopic.label}.\n\n[Tulis pesan Anda di sini]\n\nSalam,\n`
+    `Halo ${profileData.name},\n\nSaya ingin berdiskusi mengenai topik: ${selectedTopic.label}.\n\n[Tulis pesan Anda di sini]\n\nSalam,\n`
   )}`;
 
   return (
@@ -331,7 +331,7 @@ export const ContactSection: React.FC = () => {
                       </span>
                     </div>
                     <p className="text-xs font-medium text-[#1e293b] leading-relaxed">
-                      Terima kasih sudah menjelajahi portofolio ini sampai tuntas! Selalu terbuka untuk ngobrol santai seputar web dev, mobile tech, atau kolaborasi proyek seru.
+                      Terima kasih sudah menjelajahi portofolio ini sampai tuntas! Terbuka untuk kesempatan kerja full-time, diskusi web development, atau kolaborasi proyek seru.
                     </p>
                   </div>
 
@@ -364,7 +364,7 @@ export const ContactSection: React.FC = () => {
               <span className="hidden sm:inline text-[#64748b]">•</span>
             </div>
             <span className="text-[10px] sm:text-xs text-[#64748b] sm:text-[#0f172a] font-normal sm:font-bold">
-              Full-Stack &amp; Mobile Developer
+              {profileData.tagline}
             </span>
           </div>
 

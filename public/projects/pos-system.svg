@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="posBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <filter id="brutalShadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="4" dy="4" stdDeviation="0" flood-color="#0f172a" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="500" fill="url(#posBg)" />
+
+  <!-- Top App Navigation -->
+  <rect x="30" y="25" width="740" height="50" rx="12" fill="#fffdf5" stroke="#0f172a" stroke-width="3" filter="url(#brutalShadow)" />
+  <circle cx="60" cy="50" r="7" fill="#ef4444" stroke="#0f172a" stroke-width="2" />
+  <circle cx="82" cy="50" r="7" fill="#fde047" stroke="#0f172a" stroke-width="2" />
+  <circle cx="104" cy="50" r="7" fill="#22c55e" stroke="#0f172a" stroke-width="2" />
+  <text x="135" y="55" font-family="monospace" font-size="14" font-weight="900" fill="#0f172a">POINT OF SALE (POS) — LARAVEL 10 &amp; MYSQL</text>
+  <rect x="620" y="37" width="130" height="26" rx="6" fill="#fde047" stroke="#0f172a" stroke-width="2" />
+  <text x="635" y="54" font-family="monospace" font-size="11" font-weight="900" fill="#0f172a">KASIR AKTIF</text>
+
+  <!-- Left Side: Product Grid -->
+  <rect x="30" y="95" width="460" height="375" rx="16" fill="#fff9d4" stroke="#0f172a" stroke-width="3" filter="url(#brutalShadow)" />
+  <text x="50" y="125" font-family="monospace" font-size="14" font-weight="900" fill="#0f172a">KATALOG PRODUK &amp; INVENTORI</text>
+  <rect x="320" y="108" width="150" height="25" rx="6" fill="#fffdf5" stroke="#0f172a" stroke-width="2" />
+  <text x="330" y="124" font-family="monospace" font-size="11" fill="#64748b">Cari produk...</text>
+
+  <!-- Product Cards -->
+  <g transform="translate(50, 145)">
+    <!-- Card 1 -->
+    <rect width="125" height="135" rx="10" fill="#fffdf5" stroke="#0f172a" stroke-width="2" />
+    <rect x="10" y="10" width="105" height="60" rx="6" fill="#38bdf8" stroke="#0f172a" stroke-width="1.5" />
+    <text x="12" y="88" font-family="sans-serif" font-size="12" font-weight="700" fill="#0f172a">Paket Menu A</text>
+    <text x="12" y="104" font-family="monospace" font-size="11" font-weight="800" fill="#0284c7">Rp 25.000</text>
+    <rect x="10" y="112" width="105" height="16" rx="4" fill="#fde047" stroke="#0f172a" stroke-width="1" />
+    <text x="35" y="124" font-family="monospace" font-size="9" font-weight="900" fill="#0f172a">+ TAMBAH</text>
+
+    <!-- Card 2 -->
+    <g transform="translate(145, 0)">
+      <rect width="125" height="135" rx="10" fill="#fffdf5" stroke="#0f172a" stroke-width="2" />
+      <rect x="10" y="10" width="105" height="60" rx="6" fill="#4ade80" stroke="#0f172a" stroke-width="1.5" />
+      <text x="12" y="88" font-family="sans-serif" font-size="12" font-weight="700" fill="#0f172a">Paket Menu B</text>
+      <text x="12" y="104" font-family="monospace" font-size="11" font-weight="800" fill="#0284c7">Rp 32.000</text>
+      <rect x="10" y="112" width="105" height="16" rx="4" fill="#fde047" stroke="#0f172a" stroke-width="1" />
+      <text x="35" y="124" font-family="monospace" font-size="9" font-weight="900" fill="#0f172a">+ TAMBAH</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(290, 0)">
+      <rect width="125" height="135" rx="10" fill="#fffdf5" stroke="#0f172a" stroke-width="2" />
+      <rect x="10" y="10" width="105" height="60" rx="6" fill="#f472b6" stroke="#0f172a" stroke-width="1.5" />
+      <text x="12" y="88" font-family="sans-serif" font-size="12" font-weight="700" fill="#0f172a">Paket Minuman</text>
+      <text x="12" y="104" font-family="monospace" font-size="11" font-weight="800" fill="#0284c7">Rp 12.000</text>
+      <rect x="10" y="112" width="105" height="16" rx="4" fill="#fde047" stroke="#0f172a" stroke-width="1" />
+      <text x="35" y="124" font-family="monospace" font-size="9" font-weight="900" fill="#0f172a">+ TAMBAH</text>
+    </g>
+  </g>
+
+  <!-- Bottom Badges on Left -->
+  <g transform="translate(50, 300)">
+    <rect width="420" height="150" rx="10" fill="#fffdf5" stroke="#0f172a" stroke-width="2" />
+    <text x="15" y="24" font-family="monospace" font-size="12" font-weight="900" fill="#0f172a">STATUS INVENTORI REAL-TIME</text>
+    <!-- Table items -->
+    <line x1="15" y1="36" x2="405" y2="36" stroke="#e2d3b3" stroke-width="2" />
+    <text x="15" y="55" font-family="monospace" font-size="11" fill="#475569">Produk SKU #0012</text>
+    <text x="250" y="55" font-family="monospace" font-size="11" fill="#16a34a" font-weight="700">Stok: 142 Unit</text>
+    <text x="345" y="55" font-family="monospace" font-size="11" fill="#0284c7">Tersedia</text>
+
+    <line x1="15" y1="68" x2="405" y2="68" stroke="#e2d3b3" stroke-width="1.5" />
+    <text x="15" y="87" font-family="monospace" font-size="11" fill="#475569">Produk SKU #0015</text>
+    <text x="250" y="87" font-family="monospace" font-size="11" fill="#16a34a" font-weight="700">Stok: 88 Unit</text>
+    <text x="345" y="87" font-family="monospace" font-size="11" fill="#0284c7">Tersedia</text>
+
+    <line x1="15" y1="100" x2="405" y2="100" stroke="#e2d3b3" stroke-width="1.5" />
+    <text x="15" y="119" font-family="monospace" font-size="11" fill="#475569">Produk SKU #0021</text>
+    <text x="250" y="119" font-family="monospace" font-size="11" fill="#eab308" font-weight="700">Stok: 8 Unit</text>
+    <text x="345" y="119" font-family="monospace" font-size="11" fill="#ca8a04">Hampir Habis</text>
+  </g>
+
+  <!-- Right Side: Order Cart & Struk -->
+  <rect x="510" y="95" width="260" height="375" rx="16" fill="#fffdf5" stroke="#0f172a" stroke-width="3" filter="url(#brutalShadow)" />
+  <rect x="510" y="95" width="260" height="42" rx="16" fill="#fde047" stroke="#0f172a" stroke-width="3" />
+  <text x="530" y="122" font-family="monospace" font-size="13" font-weight="900" fill="#0f172a">RINGKASAN TRANSAKSI</text>
+
+  <!-- Items in Cart -->
+  <text x="530" y="162" font-family="sans-serif" font-size="12" font-weight="700" fill="#0f172a">Paket Menu A (2x)</text>
+  <text x="700" y="162" font-family="monospace" font-size="12" font-weight="800" fill="#0f172a">50.000</text>
+
+  <text x="530" y="188" font-family="sans-serif" font-size="12" font-weight="700" fill="#0f172a">Paket Minuman (3x)</text>
+  <text x="700" y="188" font-family="monospace" font-size="12" font-weight="800" fill="#0f172a">36.000</text>
+
+  <line x1="530" y1="210" x2="745" y2="210" stroke="#0f172a" stroke-width="2" stroke-dasharray="4" />
+
+  <text x="530" y="235" font-family="monospace" font-size="12" fill="#64748b">Subtotal</text>
+  <text x="700" y="235" font-family="monospace" font-size="12" font-weight="700" fill="#0f172a">86.000</text>
+
+  <text x="530" y="258" font-family="monospace" font-size="12" fill="#64748b">PPN (11%)</text>
+  <text x="708" y="258" font-family="monospace" font-size="12" font-weight="700" fill="#0f172a">9.460</text>
+
+  <rect x="525" y="280" width="230" height="48" rx="8" fill="#fff9d4" stroke="#0f172a" stroke-width="2" />
+  <text x="535" y="300" font-family="monospace" font-size="11" font-weight="700" fill="#8c6239">TOTAL BAYAR</text>
+  <text x="535" y="320" font-family="monospace" font-size="16" font-weight="900" fill="#0284c7">Rp 95.460</text>
+
+  <!-- Process Payment Button -->
+  <rect x="525" y="342" width="230" height="42" rx="10" fill="#22c55e" stroke="#0f172a" stroke-width="2.5" />
+  <text x="560" y="368" font-family="monospace" font-size="13" font-weight="900" fill="#ffffff">PROSES BAYAR &gt;&gt;</text>
+
+  <!-- Print Receipt Button -->
+  <rect x="525" y="394" width="230" height="38" rx="10" fill="#38bdf8" stroke="#0f172a" stroke-width="2" />
+  <text x="575" y="418" font-family="monospace" font-size="12" font-weight="900" fill="#0f172a">CETAK STRUK</text>
+
+  <text x="545" y="455" font-family="monospace" font-size="10" font-weight="700" fill="#94a3b8">Laravel 10 • MySQL • MVC</text>
+</svg>

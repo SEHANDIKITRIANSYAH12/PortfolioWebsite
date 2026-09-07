@@ -1,92 +1,102 @@
 import type { ProfileData, Project, TechItem, ExperienceItem } from '../types/portfolio';
 
 export const profileData: ProfileData = {
-  name: 'Reyhand Astra',
-  tagline: 'Full-Stack & Mobile Developer',
-  education: 'Teknik Informatika (S1) • Universitas Widyatama',
-  status: 'Available for Engineering Roles & Projects',
-  bio: 'Informatics engineering undergraduate focused on building end-to-end web platforms and mobile applications with resilient architecture, clean code, and Linux-driven workflows.',
-  experienceStart: 'Active Developer',
-  avatarUrl: '/avatar.svg',
+  name: 'Sehandiki Triansyah',
+  tagline: 'Web Developer (Front End & Back End)',
+  education: 'Teknik Informatika (S1) • Universitas Gunadarma',
+  status: 'Available for Web Developer Roles & Projects',
+  bio: 'Fresh graduate S1 Teknik Informatika Universitas Gunadarma dengan IPK 3.38/4.00. Memiliki pemahaman kuat dalam pengembangan aplikasi web, baik sisi front end maupun back end, melalui proyek perkuliahan dan pengembangan mandiri. Terbiasa bekerja dengan HTML, CSS, JavaScript, framework PHP Laravel, serta pengelolaan basis data relasional MySQL.',
+  experienceStart: 'Fresh Graduate 2026',
+  avatarUrl: '/projects/sehanavatar.jpeg',
   interests: [
-    'Web Architecture',
-    'Mobile Systems',
-    'Linux Ecosystem',
-    'Software Reliability',
-    'Reactive Interfaces'
+    'Front End & Back End Development',
+    'Laravel & PHP Ecosystem',
+    'Relational Databases (MySQL & PostgreSQL)',
+    'RESTful API Engineering',
+    'Modern JavaScript & React.js'
   ],
   contact: {
-    email: 'ryhndastra@gmail.com',
-    github: 'https://github.com/ryhndastra',
-    linkedin: 'https://linkedin.com/in/reyhand-astra',
-    location: 'Indonesia'
+    email: 'sehandiki17@gmail.com',
+    github: 'https://github.com/SEHANDIKITRIANSYAH12',
+    linkedin: 'https://linkedin.com/in/sehandikitriansyah',
+    location: 'Rangkasbitung, Banten • Depok, Jawa Barat'
   }
 };
 
 export const techStackData: TechItem[] = [
   // client interface layer
   {
-    name: 'TypeScript',
+    name: 'HTML5',
     category: 'frontend',
     layer: 'client',
-    iconKey: 'typescript',
-    color: '#3178C6',
-    roleTag: 'Type Contracts',
-    usageContext: 'Type-safe contracts across full-stack applications and component props',
-    projectLinks: ['cimart', 'kalorin-ai']
+    iconKey: 'html5',
+    color: '#e34f26',
+    roleTag: 'Semantic Markup',
+    usageContext: 'Struktur semantik dokumen web, aksesibilitas, SEO-friendly layout, dan form controls',
+    projectLinks: ['pos-laravel', 'kelurahan-palmeriam']
   },
   {
-    name: 'React',
+    name: 'CSS3',
+    category: 'frontend',
+    layer: 'client',
+    iconKey: 'css',
+    color: '#1572b6',
+    roleTag: 'Modern Styling',
+    usageContext: 'Styling tata letak responsif dengan Flexbox, CSS Grid, animasi transisi, dan media queries',
+    projectLinks: ['pos-laravel', 'kelurahan-palmeriam']
+  },
+  {
+    name: 'JavaScript (ES6+)',
+    category: 'frontend',
+    layer: 'client',
+    iconKey: 'javascript',
+    color: '#f7df1e',
+    roleTag: 'Client Logic',
+    usageContext: 'Pemrograman logika interaktif, asynchronous fetch API, manipulasi DOM, dan event handling',
+    projectLinks: ['pos-laravel', 'kelurahan-palmeriam', 'restapi-database-service']
+  },
+  {
+    name: 'React.js',
     category: 'frontend',
     layer: 'client',
     iconKey: 'react',
     color: '#0284c7',
     roleTag: 'Component UI',
-    usageContext: 'Component-driven UI, state management, custom hooks, and interactive flows',
-    projectLinks: ['cimart', 'kalorin-ai']
+    usageContext: 'Pembuatan antarmuka web berbasis komponen reaktif, custom hooks, dan state management modular',
+    projectLinks: ['kelurahan-palmeriam']
   },
   {
-    name: 'Next.js',
-    category: 'frontend',
-    layer: 'client',
-    iconKey: 'nextdotjs',
-    color: '#0f172a',
-    roleTag: 'App Framework',
-    usageContext: 'Server-side rendering, static generation, and edge routing',
-    projectLinks: ['cimart']
-  },
-  {
-    name: 'Flutter',
-    category: 'mobile',
-    layer: 'client',
-    iconKey: 'flutter',
-    color: '#0284c7',
-    roleTag: 'Native Mobile',
-    usageContext: 'Cross-platform native mobile apps for iOS and Android with 60fps reactive UI',
-    projectLinks: ['villanakey']
-  },
-  {
-    name: 'Tailwind CSS v4',
+    name: 'Tailwind CSS',
     category: 'frontend',
     layer: 'client',
     iconKey: 'tailwindcss',
     color: '#06b6d4',
-    roleTag: 'Design Tokens',
-    usageContext: 'Modern utility-first styling, design tokens, and fluid responsive layouts',
-    projectLinks: ['cimart', 'kalorin-ai']
+    roleTag: 'Utility Styling',
+    usageContext: 'Desain responsif cepat berbasis utility classes, estetika modern, dan konsistensi token desain',
+    projectLinks: ['pos-laravel', 'kelurahan-palmeriam']
   },
   {
-    name: 'JavaScript',
+    name: 'Bootstrap',
     category: 'frontend',
     layer: 'client',
-    iconKey: 'javascript',
-    color: '#eab308',
-    roleTag: 'Scripting Core',
-    usageContext: 'Core web scripting, DOM events, and asynchronous event loops',
-    projectLinks: ['cimart']
+    iconKey: 'bootstrap',
+    color: '#7952b3',
+    roleTag: 'Grid & Component UI',
+    usageContext: 'Pengembangan layout responsif dengan sistem 12-grid, modal dialog, formulir, dan komponen admin',
+    projectLinks: ['pos-laravel', 'kelurahan-palmeriam']
   },
 
   // backend engine layer
+  {
+    name: 'PHP',
+    category: 'backend',
+    layer: 'backend',
+    iconKey: 'php',
+    color: '#777bb4',
+    roleTag: 'Server Scripting',
+    usageContext: 'Pemrograman backend server-side, penanganan sesi pengguna, dan manipulasi data dinamis',
+    projectLinks: ['pos-laravel', 'kelurahan-palmeriam', 'restapi-database-service']
+  },
   {
     name: 'Laravel',
     category: 'backend',
@@ -94,312 +104,294 @@ export const techStackData: TechItem[] = [
     iconKey: 'laravel',
     color: '#ef4444',
     roleTag: 'MVC & REST Engine',
-    usageContext: 'Robust REST APIs, Inertia backend routing, authentication, and transaction handling',
-    projectLinks: ['cimart']
+    usageContext: 'Pengembangan web berskala penuh dengan pola MVC, Eloquent ORM, migrasi database, dan REST API',
+    projectLinks: ['pos-laravel', 'kelurahan-palmeriam', 'restapi-database-service']
   },
   {
-    name: 'Node.js',
+    name: 'Node.js (Express)',
     category: 'backend',
     layer: 'backend',
     iconKey: 'nodejs',
     color: '#22c55e',
-    roleTag: 'Server Runtime',
-    usageContext: 'High-throughput microservices, real-time WebSockets, and build automation tooling',
-    projectLinks: ['kalorin-ai']
+    roleTag: 'REST Microservices',
+    usageContext: 'Pembuatan RESTful API asynchronous, routing cepat dengan Express, dan integrasi middleware',
+    projectLinks: ['restapi-database-service']
+  },
+  {
+    name: 'Java (Spring Boot)',
+    category: 'backend',
+    layer: 'backend',
+    iconKey: 'springboot',
+    color: '#6db33f',
+    roleTag: 'Enterprise Backend',
+    usageContext: 'Implementasi konsep Object-Oriented Programming (OOP) tingkat lanjut dan arsitektur enterprise',
+    projectLinks: ['restapi-database-service']
   },
 
-  // database and cloud persistence layer
-  {
-    name: 'PostgreSQL',
-    category: 'backend',
-    layer: 'database',
-    iconKey: 'postgresql',
-    color: '#2563eb',
-    roleTag: 'Relational Core',
-    usageContext: 'Relational data modeling, complex queries, indexing, and transactional integrity',
-    projectLinks: ['kalorin-ai']
-  },
-  {
-    name: 'Supabase',
-    category: 'backend',
-    layer: 'database',
-    iconKey: 'supabase',
-    color: '#10b981',
-    roleTag: 'Cloud Postgres & Auth',
-    usageContext: 'Managed Postgres backend, row-level security policies, real-time subscriptions, and auth',
-    projectLinks: ['kalorin-ai']
-  },
+  // database layer
   {
     name: 'MySQL',
     category: 'backend',
     layer: 'database',
     iconKey: 'mysql',
     color: '#0284c7',
-    roleTag: 'Transactional DB',
-    usageContext: 'E-commerce relational database schemas, ACID transactions, and optimized indexing',
-    projectLinks: ['cimart']
+    roleTag: 'Relational Core',
+    usageContext: 'Perancangan skema relasional, normalisasi tabel, integritas transaksi ACID, dan relasi multi-tabel',
+    projectLinks: ['pos-laravel', 'kelurahan-palmeriam', 'restapi-database-service']
   },
   {
-    name: 'Firebase',
+    name: 'PostgreSQL',
     category: 'backend',
     layer: 'database',
-    iconKey: 'firebase',
-    color: '#f59e0b',
-    roleTag: 'NoSQL & Real-Time Sync',
-    usageContext: 'Cloud Firestore real-time calendar syncing, FCM push notifications, and Auth',
-    projectLinks: ['villanakey', 'cimart']
+    iconKey: 'postgresql',
+    color: '#2563eb',
+    roleTag: 'Advanced Relational',
+    usageContext: 'Penyimpanan data relasional tingkat lanjut, query kompleks, indexing teroptimasi, dan konsistensi data',
+    projectLinks: ['restapi-database-service']
   },
   {
-    name: 'Prisma ORM',
+    name: 'MongoDB (Dasar)',
     category: 'backend',
     layer: 'database',
-    iconKey: 'prisma',
-    color: '#6366f1',
-    roleTag: 'Type-Safe ORM',
-    usageContext: 'Type-safe database migrations, declarative schema modeling, and optimized queries',
-    projectLinks: ['kalorin-ai']
+    iconKey: 'mongodb',
+    color: '#10b981',
+    roleTag: 'NoSQL Document Store',
+    usageContext: 'Pengelolaan data dokumen berbasis JSON tanpa skema kaku untuk kebutuhan penyimpanan fleksibel',
+    projectLinks: ['restapi-database-service']
   },
 
-  // infrastructure and devops layer
+  // tools and workflow layer
   {
-    name: 'Linux',
-    category: 'tools',
-    layer: 'devops',
-    iconKey: 'linux',
-    color: '#eab308',
-    roleTag: 'System OS',
-    usageContext: 'Primary Unix environment, Bash scripting, system service management, and workflow',
-    projectLinks: ['cimart', 'villanakey', 'kalorin-ai']
-  },
-  {
-    name: 'Docker',
-    category: 'tools',
-    layer: 'devops',
-    iconKey: 'docker',
-    color: '#0284c7',
-    roleTag: 'Containerization',
-    usageContext: 'Containerized deployment, multi-stage builds, and consistent staging environments',
-    projectLinks: ['cimart']
-  },
-  {
-    name: 'Git',
+    name: 'Git & GitHub',
     category: 'tools',
     layer: 'devops',
     iconKey: 'git',
     color: '#f97316',
     roleTag: 'Version Control',
-    usageContext: 'Version control, feature branching workflows, code reviews, and CI/CD pipelines',
-    projectLinks: ['cimart', 'villanakey', 'kalorin-ai']
+    usageContext: 'Pelacakan versi kode sumber, alur branching kolaboratif, commit rapi, dan manajemen repositori',
+    projectLinks: ['pos-laravel', 'kelurahan-palmeriam', 'restapi-database-service']
   },
   {
-    name: 'Vercel',
+    name: 'Postman',
     category: 'tools',
     layer: 'devops',
-    iconKey: 'vercel',
-    color: '#0f172a',
-    roleTag: 'Edge Deployment',
-    usageContext: 'Edge deployment, continuous integration, and global CDN delivery for web apps',
-    projectLinks: ['kalorin-ai']
+    iconKey: 'postman',
+    color: '#ff6c37',
+    roleTag: 'API Testing & Docs',
+    usageContext: 'Pengujian endpoint REST API, validasi request/response payload JSON, dan automasi tes integrasi',
+    projectLinks: ['kelurahan-palmeriam', 'restapi-database-service']
+  },
+  {
+    name: 'Figma (Dasar)',
+    category: 'tools',
+    layer: 'devops',
+    iconKey: 'figma',
+    color: '#a259ff',
+    roleTag: 'UI Wireframing',
+    usageContext: 'Eksplorasi wireframe desain antarmuka web, inspeksi layout visual, dan kolaborasi desain UI/UX',
+    projectLinks: ['pos-laravel', 'kelurahan-palmeriam']
+  },
+  {
+    name: 'XAMPP & VS Code',
+    category: 'tools',
+    layer: 'devops',
+    iconKey: 'xampp',
+    color: '#fb7185',
+    roleTag: 'Local Environment',
+    usageContext: 'Manajemen server Apache lokal, server MySQL, dan lingkungan penulisan kode modern yang efisien',
+    projectLinks: ['pos-laravel', 'kelurahan-palmeriam']
   }
 ];
 
 export const projectsData: Project[] = [
   {
-    id: 'cimart',
-    title: 'CiMart (CibendaMart)',
-    subtitle: 'Rural E-Commerce Platform for Desa Cibenda, Pangandaran',
+    id: 'pos-laravel',
+    title: 'Aplikasi Web Point of Sale (POS)',
+    subtitle: 'Sistem Kasir & Manajemen Stok Berbasis Laravel 10 & MySQL (Tugas Akhir Kuliah)',
     category: 'fullstack',
-    summary: 'Platform e-commerce desa yang dibangun atas permintaan Wakil Rektor & Prodi untuk memberdayakan transaksi komoditas sembako, hasil tani, ternak, ikan, dan UMKM warga Desa Cibenda.',
-    description: 'Proyek inisiatif digitalisasi desa yang dimandatkan langsung oleh pimpinan kampus bekerjasama dengan perangkat Desa Cibenda. Platform ini menjembatani produsen desa langsung dengan pembeli regional melalui integrasi peta dan pembayaran terotomatisasi.',
+    summary: 'Aplikasi Point of Sale (POS) berbasis web menggunakan PHP Laravel 10 dengan pola MVC untuk mendukung kelancaran proses transaksi penjualan, manajemen inventori stok produk, cetak struk kasir, dan laporan harian.',
+    description: 'Skripsi / Tugas Akhir S1 Teknik Informatika di Universitas Gunadarma bertajuk "Rancang Bangun Aplikasi Web Point Of Sale Menggunakan Framework Laravel 10 Dan MySQL". Sistem dirancang dengan arsitektur MVC kokoh untuk memproses transaksi kasir dengan cepat, menghitung kalkulasi kembalian dan pajak secara otomatis, mengurangi stok produk seketika, mencetak struk kasir, serta menyusun laporan analitik penjualan harian dan bulanan.',
     architecture: [
-      'Backend monolitik Laravel dengan routing frontend React TypeScript via Inertia.js',
-      'WebSockets untuk sinkronisasi pesanan dan status transaksi real-time',
-      'Firebase Cloud Messaging (FCM) untuk push notification otomatis',
-      'Integrasi Leaflet / OpenStreetMap untuk pemetaan titik pengantaran desa',
-      'Payment gateway Midtrans otomatis dengan otentikasi Google OAuth',
-      'Containerisasi Docker untuk memastikan reliabilitas deployment antar server'
+      'Pola arsitektur MVC (Model-View-Controller) menggunakan framework PHP Laravel 10',
+      'Desain skema basis data relasional ternormalisasi dengan MySQL untuk integritas data transaksi dan inventori',
+      'Tampilan antarmuka kasir yang responsif dan mudah digunakan menggunakan Bootstrap dan Tailwind CSS',
+      'Modul transaksi kasir real-time, manajemen stok produk otomatis, dan cetak struk pembayaran',
+      'Pengujian fungsional (functional testing) menyeluruh untuk memastikan aplikasi bebas dari bug utama'
     ],
     stack: [
-      'Laravel',
-      'Inertia.js',
-      'React',
-      'TypeScript',
+      'Laravel 10',
+      'PHP',
       'MySQL',
+      'Bootstrap',
       'Tailwind CSS',
-      'Docker',
-      'FCM',
-      'WebSockets',
-      'Leaflet / OSM',
-      'Midtrans',
-      'Google OAuth'
+      'JavaScript',
+      'MVC Architecture',
+      'Functional Testing'
     ],
     highlights: [
-      'Inisiatif resmi atas penugasan Warek & Prodi Teknik Informatika',
-      'Mendukung komoditas sembako, pertanian, peternakan, perikanan, dan kerajinan',
-      'Sistem pembayaran digital instan dan pemetaan akurat level desa'
+      'Skripsi Tugas Akhir S1 Teknik Informatika Universitas Gunadarma (Lulus 2026)',
+      'Sistem transaksi kasir responsif dengan cetak struk dan manajemen stok otomatis',
+      'Desain database relasional MySQL dengan laporan penjualan harian terperinci'
     ],
-    challenges: 'Dikerjakan dan diarsiteki secara mandiri dari nol hingga tahap produksi karena keterbatasan anggota tim.',
-    role: 'Full-Stack Engineer',
-    demoUrl: 'https://cimart.desa.id',
-    isPrivateRepo: true,
-    privateRepoReason: 'Repository privat karena hak cipta institusi & kerahasiaan data',
-    imageUrl: '/projects/CibendaMart.png',
-    imageFit: 'cover',
-    featured: true,
-    metrics: [
-      { label: 'Engineering', value: 'Full-Stack Developer' },
-      { label: 'Architecture', value: 'Laravel Inertia' },
-      { label: 'Payment API', value: 'Midtrans Iris' }
-    ]
-  },
-  {
-    id: 'villanakey',
-    title: 'villaNaKey',
-    subtitle: 'Aplikasi Mobile Booking & Manajemen Reservasi Villa Keluarga',
-    category: 'mobile',
-    summary: 'Aplikasi mobile booking khusus untuk mendukung operasional bisnis hospitality villa pribadi keluarga dengan sinkronisasi kalender real-time tanpa risiko double-booking.',
-    description: 'Dikembangkan sebagai proyek akhir kampus untuk mendigitalisasi pemesanan villa keluarga, mengeliminasi risiko double-booking, dan mempermudah pengecekan jadwal reservasi bagi pengelola dan tamu.',
-    architecture: [
-      'Aplikasi mobile multi-platform dibangun dengan Flutter dan Dart SDK',
-      'Firebase Authentication untuk otentikasi aman pengelola dan tamu',
-      'Cloud Firestore NoSQL real-time database untuk sinkronisasi instan jadwal reservasi',
-      'Komponen custom calendar interaktif dengan highlight tanggal booking aktif'
-    ],
-    stack: [
-      'Flutter',
-      'Dart',
-      'Firebase Auth',
-      'Cloud Firestore',
-      'Mobile Architecture'
-    ],
-    highlights: [
-      'Digunakan langsung pada operasional villa pribadi keluarga',
-      'Sinkronisasi status booking instan tanpa latency',
-      'Kalender interaktif visual untuk kemudahan reservasi tanggal'
-    ],
-    challenges: 'Proyek aplikasi mobile pertama; mempelajari Flutter dan reaktif state management dari nol bersama kelompok di bawah tenggat waktu akademik yang ketat.',
-    role: 'Mobile Developer & Technical Lead',
-    githubUrl: 'https://github.com/ryhndastra/villanakey',
-    isMobileApp: true,
-    demoStatusLabel: 'Aplikasi Mobile Native (Demo/APK on request)',
-    imageUrl: '/projects/villa.png',
+    challenges: 'Menjamin integritas data transaksi saat pergerakan stok berlangsung simultan dan mengoptimalkan query MySQL agar proses pencarian produk kasir tetap cepat.',
+    role: 'Full-Stack Web Developer',
+    githubUrl: 'https://github.com/SEHANDIKITRIANSYAH12',
+    imageUrl: '/projects/pos-system.svg',
     imageFit: 'contain',
     featured: true,
     metrics: [
-      { label: 'Mobile Engine', value: 'Flutter & Dart' },
-      { label: 'Database Sync', value: 'Real-Time NoSQL' },
-      { label: 'State & Cloud', value: 'Firebase Suite' }
+      { label: 'Tugas Akhir', value: 'Univ. Gunadarma' },
+      { label: 'IPK Kelulusan', value: '3.38 / 4.00' },
+      { label: 'Arsitektur', value: 'Laravel 10 MVC' }
     ]
   },
   {
-    id: 'kalorin-ai',
-    title: 'kalorinAi',
-    subtitle: 'Platform Web Nutrisi & Tracking Kalori Berbasis Computer Vision AI',
+    id: 'kelurahan-palmeriam',
+    title: 'Sistem Informasi Kelurahan Palmeriam',
+    subtitle: 'Platform Informasi & Layanan Administrasi Kependudukan Berbasis Chatbot (Proyek Mandiri)',
     category: 'fullstack',
-    summary: 'Platform pelacak nutrisi cerdas dengan pengenalan citra piring makanan berbasis AI untuk menghitung kalori, makronutrien, serta rekomendasi harian.',
-    description: 'Capstone Project Dicoding CodingCamp 2026 Powered by DBS Foundation yang dikembangkan bersama tim 6 orang (2 Data Analyst, 2 AI Engineer, 2 Fullstack). Fitur mencakup kalkulator BMI, tracking asupan harian, streak, insight AI, dan rekomendasi menu.',
+    summary: 'Website sistem informasi Kelurahan Palmeriam, Jakarta Timur, untuk menyediakan informasi dan layanan administrasi kependudukan digital kepada masyarakat dilengkapi chatbot interaktif.',
+    description: 'Proyek mandiri pengembangan website sistem informasi Kelurahan Palmeriam Jakarta Timur. Sistem menyediakan kanal informasi digital bagi warga, pengajuan surat pengantar kependudukan secara online, panel admin untuk verifikasi berkas pengajuan dan publikasi pengumuman kelurahan, serta asisten chatbot terintegrasi untuk menjawab pertanyaan umum seputar syarat dokumen secara otomatis.',
     architecture: [
-      'Client web modern menggunakan React, Vite, dan Tailwind CSS v4',
-      'Database dan layer data menggunakan Supabase dan Prisma ORM',
-      'Sistem otentikasi aman menggunakan Firebase Auth',
-      'Pipeline computer vision TensorFlow/Keras di backend Python untuk mendeteksi porsi dan nilai gizi (kalori, protein, lemak, karbohidrat)',
-      'Mesin rekomendasi harian adaptif berdasarkan target kalori pengguna'
+      'Portal layanan kependudukan digital untuk pengajuan berkas dan surat pengantar warga',
+      'Integrasi chatbot otomatis untuk menjawab pertanyaan umum seputar syarat dan alur dokumen 24/7',
+      'Panel admin terpadu untuk pengelolaan data warga, validasi pengajuan surat, dan pengumuman kelurahan',
+      'Basis data relasional MySQL yang terhubung sinkron melalui REST API',
+      'Tampilan antarmuka responsif dan ramah mobile menggunakan Bootstrap dan Tailwind CSS'
     ],
     stack: [
-      'React',
-      'Vite',
-      'Tailwind CSS v4',
-      'TypeScript',
-      'Supabase',
-      'Prisma ORM',
-      'Firebase Auth',
-      'TensorFlow',
-      'Python'
+      'PHP',
+      'Laravel',
+      'MySQL',
+      'REST API',
+      'Chatbot',
+      'Bootstrap',
+      'Tailwind CSS',
+      'JavaScript'
     ],
     highlights: [
-      'Capstone Project Dicoding CodingCamp 2026 Powered by DBS Foundation',
-      'Deteksi citra makanan otomatis untuk kalkulasi makronutrien instan',
-      'Sistem insight harian dan rekomendasi personal berbasis AI'
+      'Digitalisasi pengurusan surat kependudukan warga Palmeriam Jakarta Timur',
+      'Fitur chatbot otomatis untuk menjawab pertanyaan alur dan syarat dokumen',
+      'Panel admin pengelolaan data pengajuan berkas warga dan pengumuman secara real-time'
     ],
-    challenges: 'Menggarap seluruh arsitektur web dan integrasi API secara mandiri di tengah jadwal padat antara perkuliahan semester aktif dan bootcamp.',
-    role: 'Lead Web Full-Stack Developer',
-    githubUrl: 'https://github.com/ryhndastra/kalorin-ai',
-    demoUrl: 'https://kalorin-ai.vercel.app',
-    imageUrl: '/projects/kalorinLogo.png',
+    challenges: 'Merancang alur dialog chatbot yang ramah bagi berbagai kalangan warga serta mengintegrasikan panel admin dengan database relasional MySQL agar pengajuan surat tertata rapi.',
+    role: 'Full-Stack Web Developer (Proyek Mandiri)',
+    githubUrl: 'https://github.com/SEHANDIKITRIANSYAH12',
+    imageUrl: '/projects/kelurahan-chatbot.svg',
     imageFit: 'contain',
     featured: true,
     metrics: [
-      { label: 'Capstone Team', value: '6 Engineers' },
-      { label: 'AI Inference', value: 'TensorFlow CNN' },
-      { label: 'Web Platform', value: 'React & Vite' }
+      { label: 'Tahun Proyek', value: '2024' },
+      { label: 'Layanan Warga', value: 'Chatbot & Admin' },
+      { label: 'Basis Data', value: 'MySQL Relasional' }
+    ]
+  },
+  {
+    id: 'restapi-database-service',
+    title: 'Backend REST API & Database Services',
+    subtitle: 'Arsitektur REST API Terstandar, Otentikasi & Database Relasional (MySQL/PostgreSQL)',
+    category: 'backend',
+    summary: 'Layanan backend RESTful API dengan penerapan pola OOP & MVC, otentikasi data aman, serta pemodelan skema database relasional MySQL dan PostgreSQL teruji Postman.',
+    description: 'Implementasi arsitektur backend komprehensif menggunakan PHP (Laravel), Node.js (Express), dan Java (Spring Boot) yang menerapkan prinsip Object-Oriented Programming (OOP) dan Model-View-Controller (MVC). Menjamin konsistensi transaksi ACID pada database MySQL dan PostgreSQL, pengujian endpoint otomatis via Postman, serta integrasi payload JSON terstandar.',
+    architecture: [
+      'Pengembangan endpoint RESTful API terstandar dengan format JSON konsisten dan status code HTTP tepat',
+      'Penerapan pola OOP dan MVC untuk pemisahan logika bisnis, kontroler, dan representasi model data',
+      'Perancangan skema relasional ternormalisasi dengan MySQL dan PostgreSQL serta eksplorasi MongoDB',
+      'Validasi request parameter, error handling menyeluruh, dan pengujian API menggunakan Postman',
+      'Manajemen repositori dan version control kolaboratif melalui Git & GitHub'
+    ],
+    stack: [
+      'PHP (Laravel)',
+      'Node.js (Express)',
+      'Java (Spring Boot)',
+      'MySQL',
+      'PostgreSQL',
+      'MongoDB',
+      'Postman',
+      'REST API'
+    ],
+    highlights: [
+      'Standarisasi RESTful API endpoint untuk integrasi berbagai klien web',
+      'Penerapan prinsip OOP dan arsitektur MVC yang modular dan mudah dipelihara',
+      'Pemodelan basis data relasional ACID compliant dengan MySQL & PostgreSQL'
+    ],
+    challenges: 'Menjaga standarisasi struktur response payload JSON dan mengoptimalkan performa query relasional multi-tabel.',
+    role: 'Backend & API Developer',
+    githubUrl: 'https://github.com/SEHANDIKITRIANSYAH12',
+    imageUrl: '/projects/rest-api.svg',
+    imageFit: 'contain',
+    featured: true,
+    metrics: [
+      { label: 'Arsitektur', value: 'OOP & MVC REST API' },
+      { label: 'Database', value: 'MySQL & PostgreSQL' },
+      { label: 'Pengujian API', value: 'Postman Verified' }
     ]
   }
 ];
 
 export const experienceData: ExperienceItem[] = [
   {
-    id: 'edu-widyatama',
-    period: '2023 - Sekarang',
-    role: 'S1 Teknik Informatika',
-    organization: 'Universitas Widyatama (Angkatan 2023)',
-    badge: 'Pendidikan Formal',
+    id: 'edu-gunadarma',
+    period: '2022 - 2026',
+    role: 'S1 Teknik Informatika (IPK 3.38 / 4.00)',
+    organization: 'Universitas Gunadarma • Depok, Jawa Barat',
+    badge: 'Pendidikan Formal (Lulus 2026)',
     category: 'education',
     description:
-      'Menempuh studi sarjana Teknik Informatika dengan pendalaman fundamental ilmu komputer, struktur data, algoritma, rekayasa perangkat lunak, dan mengambil penjurusan spesialisasi Database / Data Analyst.',
+      'Menyelesaikan studi sarjana S1 Teknik Informatika di Universitas Gunadarma dengan IPK 3.38 / 4.00. Memiliki pemahaman kuat dalam pengembangan aplikasi web (front end & back end), basis data relasional, rekayasa perangkat lunak, struktur data, dan jaringan komputer. Berhasil menyelesaikan Skripsi/Tugas Akhir bertajuk "Rancang Bangun Aplikasi Web Point Of Sale Menggunakan Framework Laravel 10 Dan MySQL".',
     highlights: [
-      'Penjurusan Database & Data Analyst',
-      'Pemodelan Data Relasional & Optimasi Query SQL',
-      'Fundamental Rekayasa Perangkat Lunak & Algoritma'
+      'Lulusan S1 Teknik Informatika Universitas Gunadarma dengan IPK 3.38 / 4.00',
+      'Skripsi/Tugas Akhir: Aplikasi POS Web Menggunakan Laravel 10 & MySQL',
+      'Mata Kuliah Unggulan: Pemrograman Web, Basis Data, RPL, Struktur Data, Jaringan Komputer'
     ],
-    tech: ['Database Systems', 'Data Analysis', 'SQL', 'Algorithms', 'Software Engineering', 'System Design']
+    tech: ['Laravel 10', 'PHP', 'MySQL', 'JavaScript (ES6+)', 'Bootstrap', 'Tailwind CSS', 'MVC', 'OOP']
   },
   {
-    id: 'exp-dicoding-dbs',
-    period: 'Feb 2026 - Jul 2026',
-    role: 'Fullstack Developer (Learning Path)',
-    organization: 'Dicoding CodingCamp 2026 Powered by DBS Foundation',
-    badge: 'Intensive Bootcamp',
+    id: 'cert-ai-ml',
+    period: '2024 - 2025',
+    role: 'Sertifikasi Machine Learning & Artificial Intelligence',
+    organization: 'Digital Talent Scholarship, Dicoding & DQLab',
+    badge: 'Pelatihan & Sertifikasi AI',
     category: 'bootcamp',
     description:
-      'Program beasiswa pelatihan intensif Fullstack Developer dari Dicoding dan DBS Foundation. Membangun arsitektur frontend web modern (React & Vite), integrasi API backend type-safe, otentikasi data, dan berkolaborasi dalam Capstone Project kalorinAI.',
+      'Mengikuti serangkaian pelatihan dan sertifikasi kompetensi kecerdasan buatan, termasuk program Kecerdasan Artifisial (Micro Skill) dari Kemenkominfo Digital Talent Scholarship, Belajar Dasar AI dari Dicoding Academy, serta pelatihan Machine Learning dengan Python dari DQLab.',
     highlights: [
-      'Lulusan Jalur Fullstack Developer',
-      'Integrasi REST API, State Management & Cloud DB',
-      'Kolaborasi Tim Capstone Project kalorinAI'
+      'Kecerdasan Artifisial (Micro Skill) – Digital Talent Scholarship (Kemenkominfo)',
+      'Belajar Dasar AI – Dicoding Academy Certification',
+      'Machine Learning dengan Python – DQLab'
     ],
-    tech: ['React', 'TypeScript', 'Node.js', 'Supabase', 'Prisma ORM', 'Tailwind CSS', 'REST API']
+    tech: ['Machine Learning', 'Python', 'Artificial Intelligence', 'Data Analysis', 'Algorithms']
   },
   {
-    id: 'exp-cimart-mbkm',
-    period: 'Jul 2026 - Sekarang',
-    role: 'Full-Stack Developer',
-    organization: 'Inisiatif MBKM / KKN Tematik & Capstone Kampus Desa Cibenda',
-    badge: 'MBKM / Capstone Kampus',
+    id: 'cert-enterprise-ai',
+    period: '2024 - 2025',
+    role: 'Pelatihan Enterprise Generative AI & Cloud',
+    organization: 'IBM Granite & AWS Generative AI',
+    badge: 'Sertifikasi Global',
+    category: 'bootcamp',
+    description:
+      'Menyelesaikan program pelatihan teknologi kecerdasan buatan tingkat lanjut dari IBM Granite dan AWS Generative AI untuk memahami implementasi model enterprise AI, arsitektur komputasi awan, dan integrasi kecerdasan artifisial generatif pada aplikasi modern.',
+    highlights: [
+      'IBM Granite Enterprise AI Foundation',
+      'AWS Generative AI Training Program',
+      'Penerapan Konsep AI Generatif pada Sistem Berbasis Web'
+    ],
+    tech: ['AWS Generative AI', 'IBM Granite', 'Cloud Ecosystem', 'Prompt Engineering']
+  },
+  {
+    id: 'cert-web-gunadarma',
+    period: '2023 - 2024',
+    role: 'Sertifikasi Fundamental Web & Pemrograman JavaScript',
+    organization: 'Universitas Gunadarma',
+    badge: 'Sertifikasi Akademik',
     category: 'project',
     description:
-      'Inisiatif MBKM / KKN Tematik resmi dari kampus yang menjadi Capstone Project untuk digitalisasi komoditas ekonomi warga Desa Cibenda, Pangandaran. Dikerjakan secara mandiri dari perancangan arsitektur sistem, integrasi payment gateway Midtrans, notifikasi FCM, hingga deployment produksi.',
+      'Memperoleh sertifikasi kompetensi resmi Fundamental Web dan Javascript For Beginner yang diselenggarakan oleh Universitas Gunadarma, memperkuat keahlian manipulasi DOM, pemrograman asynchronous (ES6+), semantic HTML5, dan desain web responsif.',
     highlights: [
-      'Mandat Resmi Pimpinan Kampus & Perangkat Desa',
-      'Development Arsitektur End-to-End',
-      'Integrasi Payment Gateway Midtrans & WebSockets'
+      'Sertifikasi Fundamental Web – Universitas Gunadarma',
+      'Sertifikasi Javascript For Beginner – Universitas Gunadarma',
+      'Penguasaan Asynchronous JavaScript, Fetch API, DOM APIs, dan Responsive Styling'
     ],
-    tech: ['Laravel', 'Inertia.js', 'React', 'MySQL', 'Docker', 'WebSockets', 'Midtrans', 'Leaflet']
-  },
-  {
-    id: 'exp-rework-cybersecurity',
-    period: 'Agu 2026 - Des 2026',
-    role: 'Cyber Security Trainee (Red Team Focus)',
-    organization: 'Cyber Security Bootcamp by Rework Academy',
-    badge: 'Cyber Security Bootcamp',
-    category: 'security',
-    description:
-      'Pelatihan intensif keamanan siber komprehensif mulai dari fundamental cybersecurity, vulnerability assessment, web application penetration testing (OWASP Top 10), network penetration testing, bug bounty hunting, hingga penyusunan security reporting profesional. Fokus mendalam pada Red Team (Offensive Security) dengan pemahaman komplementer Blue Team (Defensive) dan Purple Team.',
-    highlights: [
-      'Web Application & Network Penetration Testing',
-      'Metodologi Bug Bounty & Eksploitasi OWASP Top 10',
-      'Vulnerability Assessment & Security Reporting',
-      'Fokus Offensive Red Team dengan Pemahaman Blue/Purple Team'
-    ],
-    tech: ['Web App Pentesting', 'Network Security', 'OWASP Top 10', 'Bug Bounty', 'Red Teaming', 'Linux Security', 'Security Reporting']
+    tech: ['JavaScript (ES6+)', 'HTML5', 'CSS3', 'DOM APIs', 'Responsive Web Design']
   }
 ];

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="kelBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="brutalShadow2" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="4" dy="4" stdDeviation="0" flood-color="#0f172a" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="500" fill="url(#kelBg)" />
+
+  <!-- Top App Navigation -->
+  <rect x="30" y="25" width="740" height="50" rx="12" fill="#fffdf5" stroke="#0f172a" stroke-width="3" filter="url(#brutalShadow2)" />
+  <circle cx="60" cy="50" r="7" fill="#ef4444" stroke="#0f172a" stroke-width="2" />
+  <circle cx="82" cy="50" r="7" fill="#fde047" stroke="#0f172a" stroke-width="2" />
+  <circle cx="104" cy="50" r="7" fill="#22c55e" stroke="#0f172a" stroke-width="2" />
+  <text x="135" y="55" font-family="monospace" font-size="13" font-weight="900" fill="#0f172a">PORTAL KELURAHAN PALMERIAM JAKARTA TIMUR</text>
+  <rect x="620" y="37" width="130" height="26" rx="6" fill="#38bdf8" stroke="#0f172a" stroke-width="2" />
+  <text x="635" y="54" font-family="monospace" font-size="11" font-weight="900" fill="#0f172a">LAYANAN WARGA</text>
+
+  <!-- Left Side: Portal Services & Admin -->
+  <rect x="30" y="95" width="450" height="375" rx="16" fill="#fff9d4" stroke="#0f172a" stroke-width="3" filter="url(#brutalShadow2)" />
+  <text x="50" y="125" font-family="monospace" font-size="14" font-weight="900" fill="#0f172a">LAYANAN ADMINISTRASI DIGITAL</text>
+
+  <!-- Service Cards -->
+  <g transform="translate(50, 145)">
+    <!-- Service 1 -->
+    <rect width="185" height="85" rx="10" fill="#fffdf5" stroke="#0f172a" stroke-width="2" />
+    <rect x="12" y="12" width="28" height="28" rx="6" fill="#fde047" stroke="#0f172a" stroke-width="1.5" />
+    <text x="21" y="31" font-family="monospace" font-size="14" font-weight="900">📄</text>
+    <text x="48" y="25" font-family="sans-serif" font-size="11" font-weight="800" fill="#0f172a">Surat Pengantar</text>
+    <text x="48" y="38" font-family="monospace" font-size="9" fill="#64748b">SKCK &amp; Domisili</text>
+    <rect x="12" y="52" width="160" height="22" rx="4" fill="#0284c7" stroke="#0f172a" stroke-width="1" />
+    <text x="45" y="67" font-family="monospace" font-size="9" font-weight="900" fill="#ffffff">Ajukan Dokumen</text>
+
+    <!-- Service 2 -->
+    <g transform="translate(205, 0)">
+      <rect width="185" height="85" rx="10" fill="#fffdf5" stroke="#0f172a" stroke-width="2" />
+      <rect x="12" y="12" width="28" height="28" rx="6" fill="#4ade80" stroke="#0f172a" stroke-width="1.5" />
+      <text x="21" y="31" font-family="monospace" font-size="14" font-weight="900">👥</text>
+      <text x="48" y="25" font-family="sans-serif" font-size="11" font-weight="800" fill="#0f172a">Data Kependudukan</text>
+      <text x="48" y="38" font-family="monospace" font-size="9" fill="#64748b">Validasi NIK / KK</text>
+      <rect x="12" y="52" width="160" height="22" rx="4" fill="#10b981" stroke="#0f172a" stroke-width="1" />
+      <text x="50" y="67" font-family="monospace" font-size="9" font-weight="900" fill="#ffffff">Cek Status Data</text>
+    </g>
+  </g>
+
+  <!-- Pengumuman & Panel Admin List -->
+  <g transform="translate(50, 250)">
+    <rect width="410" height="200" rx="12" fill="#fffdf5" stroke="#0f172a" stroke-width="2" />
+    <text x="15" y="25" font-family="monospace" font-size="12" font-weight="900" fill="#0f172a">PANEL ADMIN: PENGAJUAN WARGA (LIVE)</text>
+    <line x1="15" y1="36" x2="395" y2="36" stroke="#e2d3b3" stroke-width="2" />
+
+    <!-- Item 1 -->
+    <text x="15" y="55" font-family="monospace" font-size="11" font-weight="700" fill="#0f172a">REQ-2024-0891</text>
+    <text x="135" y="55" font-family="sans-serif" font-size="11" fill="#475569">Pengantar SKCK (RT 03/RW 04)</text>
+    <rect x="315" y="42" width="75" height="18" rx="4" fill="#bbf7d0" stroke="#16a34a" stroke-width="1" />
+    <text x="325" y="55" font-family="monospace" font-size="9" font-weight="900" fill="#15803d">DISETUJUI</text>
+
+    <!-- Item 2 -->
+    <line x1="15" y1="68" x2="395" y2="68" stroke="#e2d3b3" stroke-width="1" />
+    <text x="15" y="87" font-family="monospace" font-size="11" font-weight="700" fill="#0f172a">REQ-2024-0892</text>
+    <text x="135" y="87" font-family="sans-serif" font-size="11" fill="#475569">Keterangan Domisili Usaha</text>
+    <rect x="315" y="74" width="75" height="18" rx="4" fill="#fef08a" stroke="#ca8a04" stroke-width="1" />
+    <text x="325" y="87" font-family="monospace" font-size="9" font-weight="900" fill="#854d0e">PROSES</text>
+
+    <!-- Item 3 -->
+    <line x1="15" y1="100" x2="395" y2="100" stroke="#e2d3b3" stroke-width="1" />
+    <text x="15" y="119" font-family="monospace" font-size="11" font-weight="700" fill="#0f172a">REQ-2024-0893</text>
+    <text x="135" y="119" font-family="sans-serif" font-size="11" fill="#475569">Surat Keterangan Kematian</text>
+    <rect x="315" y="106" width="75" height="18" rx="4" fill="#bbf7d0" stroke="#16a34a" stroke-width="1" />
+    <text x="325" y="119" font-family="monospace" font-size="9" font-weight="900" fill="#15803d">DISETUJUI</text>
+
+    <rect x="15" y="145" width="375" height="38" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5" />
+    <text x="25" y="168" font-family="monospace" font-size="10" font-weight="700" fill="#0369a1">MySQL DB &amp; REST API terhubung sinkron dengan dashboard</text>
+  </g>
+
+  <!-- Right Side: Chatbot Assistant Window -->
+  <rect x="500" y="95" width="270" height="375" rx="16" fill="#fffdf5" stroke="#0f172a" stroke-width="3" filter="url(#brutalShadow2)" />
+  <rect x="500" y="95" width="270" height="48" rx="16" fill="#0284c7" stroke="#0f172a" stroke-width="3" />
+  <circle cx="525" cy="119" r="12" fill="#fde047" stroke="#0f172a" stroke-width="2" />
+  <text x="520" y="124" font-family="monospace" font-size="12" font-weight="900">🤖</text>
+  <text x="545" y="118" font-family="sans-serif" font-size="12" font-weight="800" fill="#ffffff">Asisten Chatbot Warga</text>
+  <text x="545" y="132" font-family="monospace" font-size="9" fill="#bae6fd">Online 24/7 Otomatis</text>
+
+  <!-- Chat Dialogues -->
+  <!-- Bot message 1 -->
+  <g transform="translate(515, 155)">
+    <rect width="210" height="42" rx="10" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5" />
+    <text x="10" y="18" font-family="sans-serif" font-size="10" font-weight="600" fill="#0f172a">Halo warga Palmeriam! Ada</text>
+    <text x="10" y="32" font-family="sans-serif" font-size="10" font-weight="600" fill="#0f172a">yang bisa dibantu hari ini?</text>
+  </g>
+
+  <!-- User message 1 -->
+  <g transform="translate(555, 208)">
+    <rect width="200" height="42" rx="10" fill="#fde047" stroke="#0f172a" stroke-width="1.5" />
+    <text x="10" y="18" font-family="sans-serif" font-size="10" font-weight="600" fill="#0f172a">Apa saja syarat membuat</text>
+    <text x="10" y="32" font-family="sans-serif" font-size="10" font-weight="600" fill="#0f172a">Surat Pengantar SKCK?</text>
+  </g>
+
+  <!-- Bot message 2 -->
+  <g transform="translate(515, 260)">
+    <rect width="235" height="70" rx="10" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5" />
+    <text x="10" y="18" font-family="sans-serif" font-size="9.5" font-weight="700" fill="#0284c7">Syarat Berkas SKCK:</text>
+    <text x="10" y="32" font-family="sans-serif" font-size="9.5" fill="#0f172a">1. KTP &amp; KK Asli / Fotokopi</text>
+    <text x="10" y="46" font-family="sans-serif" font-size="9.5" fill="#0f172a">2. Surat Pengantar RT &amp; RW</text>
+    <text x="10" y="60" font-family="sans-serif" font-size="9.5" fill="#0f172a">3. Pas foto 4x6 (2 lembar)</text>
+  </g>
+
+  <!-- Chat Input Field -->
+  <g transform="translate(515, 420)">
+    <rect width="240" height="38" rx="8" fill="#f8fafc" stroke="#0f172a" stroke-width="2" />
+    <text x="12" y="24" font-family="monospace" font-size="10" fill="#94a3b8">Ketik pertanyaan...</text>
+    <rect x="185" y="6" width="48" height="26" rx="6" fill="#0284c7" stroke="#0f172a" stroke-width="1.5" />
+    <text x="198" y="23" font-family="monospace" font-size="11" font-weight="900" fill="#ffffff">KIRIM</text>
+  </g>
+
+  <text x="535" y="395" font-family="monospace" font-size="9" font-weight="700" fill="#94a3b8">Bootstrap • Tailwind • REST API</text>
+</svg>

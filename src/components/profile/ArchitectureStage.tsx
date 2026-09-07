@@ -13,26 +13,26 @@ export const ArchitectureStage: React.FC<ArchitectureStageProps> = ({ isFlooded 
     {
       id: 'web',
       icon: <Code2 className="w-5 h-5 text-[#0284c7]" />,
-      title: 'Fullstack Web Development',
-      subtitle: 'Laravel Monolith & Modern React Ecosystem',
-      desc: 'Membangun aplikasi web end-to-end dengan backend Laravel / Node.js dan frontend modern React, Next.js, serta TypeScript. Terbiasa mengelola pemodelan database relasional, optimasi query SQL, integrasi REST API, dan antarmuka reaktif yang responsif.',
-      tags: ['Laravel', 'Inertia.js', 'React', 'Next.js', 'TypeScript', 'PostgreSQL', 'MySQL', 'Tailwind CSS']
+      title: 'Full-Stack Web Development',
+      subtitle: 'Laravel MVC & Modern React Ecosystem',
+      desc: 'Membangun aplikasi web end-to-end dengan framework Laravel (PHP) dan frontend modern React.js, Tailwind CSS, serta Bootstrap. Berpengalaman merancang antarmuka kasir responsif, portal layanan publik, dan alur transaksi yang efisien.',
+      tags: ['Laravel 10', 'PHP', 'React.js', 'Tailwind CSS', 'Bootstrap', 'JavaScript (ES6+)', 'HTML5/CSS3']
     },
     {
-      id: 'mobile',
+      id: 'backend',
       icon: <Cpu className="w-5 h-5 text-[#0284c7]" />,
-      title: 'Mobile App Engineering',
-      subtitle: 'Cross-Platform Android & iOS Applications',
-      desc: 'Mengembangkan aplikasi mobile lintas platform menggunakan Flutter dan Dart. Menangani arsitektur state management reaktif, konsumsi RESTful API, persistensi data lokal/cloud, serta performa aplikasi yang stabil di Android dan iOS.',
-      tags: ['Flutter', 'Dart SDK', 'Mobile Architecture', 'State Management', 'REST APIs', 'Cloud Firestore']
+      title: 'Backend & Database Architecture',
+      subtitle: 'Relational & NoSQL Database Engineering',
+      desc: 'Merancang arsitektur backend berstandar REST API menggunakan Laravel, Node.js (Express), dan dasar Java (Spring Boot). Mahir mengelola basis data relasional MySQL dan PostgreSQL, normalisasi tabel, integritas transaksi ACID, serta dasar MongoDB.',
+      tags: ['MySQL', 'PostgreSQL', 'Node.js (Express)', 'Java (Spring Boot)', 'REST API', 'MongoDB', 'ACID Transactions']
     },
     {
-      id: 'linux',
+      id: 'tools',
       icon: <Terminal className="w-5 h-5 text-[#8c6239]" />,
-      title: 'Linux & DevOps Workflows',
-      subtitle: 'NixOS Daily Driver & Server Management',
-      desc: 'Menggunakan NixOS sebagai sistem operasi harian dengan konfigurasi deklaratif Flakes. Terbiasa dengan manajemen server Linux (Debian/Arch), containerisasi Docker, otomatisasi skrip Bash, dan workflow kolaborasi Git.',
-      tags: ['NixOS Flakes', 'Arch Linux', 'Debian Server', 'Docker', 'Git Branching', 'Bash CLI']
+      title: 'Tooling, Testing & Version Control',
+      subtitle: 'Git Collaboration & API Testing Workflow',
+      desc: 'Menggunakan Git & GitHub untuk version control dan branching kolaboratif, Postman untuk pengujian endpoint dan validasi request/response, XAMPP untuk server lokal, serta pemahaman konsep OOP dan pola MVC.',
+      tags: ['Git & GitHub', 'Postman', 'VS Code', 'XAMPP', 'OOP & MVC', 'Figma', 'Basic Deployment']
     }
   ];
 
@@ -154,10 +154,10 @@ export const ArchitectureStage: React.FC<ArchitectureStageProps> = ({ isFlooded 
           className="p-4 rounded-2xl bg-[#fffdf5] border border-[#e8dbc0] shadow-sm"
         >
           <span className="text-xs font-bold text-[#0f172a] block">
-            Clean Architecture
+            OOP &amp; MVC Pattern
           </span>
           <p className="text-[11px] text-[#64748b] mt-1 leading-relaxed">
-            Struktur kode terorganisir dengan pemisahan dependensi dan modularitas tinggi.
+            Penerapan pola Model-View-Controller dan prinsip Object-Oriented Programming yang rapi.
           </p>
         </motion.div>
 
@@ -171,10 +171,10 @@ export const ArchitectureStage: React.FC<ArchitectureStageProps> = ({ isFlooded 
           className="p-4 rounded-2xl bg-[#fffdf5] border border-[#e8dbc0] shadow-sm"
         >
           <span className="text-xs font-bold text-[#0f172a] block">
-            Type-Safe Contract
+            Relational Database
           </span>
           <p className="text-[11px] text-[#64748b] mt-1 leading-relaxed">
-            Keamanan tipe penuh dari skema database hingga interaksi klien.
+            Integritas data transaksi, normalisasi skema, dan optimasi query dengan MySQL &amp; PostgreSQL.
           </p>
         </motion.div>
 
@@ -188,10 +188,10 @@ export const ArchitectureStage: React.FC<ArchitectureStageProps> = ({ isFlooded 
           className="p-4 rounded-2xl bg-[#fffdf5] border border-[#e8dbc0] shadow-sm"
         >
           <span className="text-xs font-bold text-[#0f172a] block">
-            Linux Workflows
+            Responsive Web Design
           </span>
           <p className="text-[11px] text-[#64748b] mt-1 leading-relaxed">
-            Konfigurasi deklaratif NixOS, containerisasi Docker, dan efisiensi terminal.
+            Antarmuka web modern yang cepat, mudah digunakan, dan adaptif di semua ukuran layar.
           </p>
         </motion.div>
       </div>

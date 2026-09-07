@@ -17,7 +17,16 @@ import {
   SiDocker,
   SiLinux,
   SiGit,
-  SiVercel
+  SiVercel,
+  SiHtml5,
+  SiCss,
+  SiBootstrap,
+  SiPhp,
+  SiSpringboot,
+  SiMongodb,
+  SiPostman,
+  SiFigma,
+  SiXampp
 } from '@icons-pack/react-simple-icons';
 import type { TechItem, TechLayer } from '../../types/portfolio';
 import type { FlowDomainId } from './PipelineFlowPresets';
@@ -39,7 +48,16 @@ const iconMap: Record<string, React.FC<{ size?: number; color?: string; classNam
   docker: SiDocker,
   linux: SiLinux,
   git: SiGit,
-  vercel: SiVercel
+  vercel: SiVercel,
+  html5: SiHtml5,
+  css: SiCss,
+  bootstrap: SiBootstrap,
+  php: SiPhp,
+  springboot: SiSpringboot,
+  mongodb: SiMongodb,
+  postman: SiPostman,
+  figma: SiFigma,
+  xampp: SiXampp
 };
 
 interface PipelineNodeLayerProps {
