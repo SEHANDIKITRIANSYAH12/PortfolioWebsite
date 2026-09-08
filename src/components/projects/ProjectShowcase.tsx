@@ -36,31 +36,34 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ onOpenProject 
   });
 
   // gradual overlapping curtain wipe ranges
-  const ySlide2 = useTransform(smoothProgress, [0.22, 0.36], ['100%', '0%'], { clamp: true });
-  const ySlide3 = useTransform(smoothProgress, [0.47, 0.61], ['100%', '0%'], { clamp: true });
-  const ySlide4 = useTransform(smoothProgress, [0.72, 0.86], ['100%', '0%'], { clamp: true });
+  const ySlide2 = useTransform(smoothProgress, [0.18, 0.30], ['100%', '0%'], { clamp: true });
+  const ySlide3 = useTransform(smoothProgress, [0.38, 0.50], ['100%', '0%'], { clamp: true });
+  const ySlide4 = useTransform(smoothProgress, [0.58, 0.70], ['100%', '0%'], { clamp: true });
+  const ySlide5 = useTransform(smoothProgress, [0.78, 0.90], ['100%', '0%'], { clamp: true });
+
+  const totalSlides = flagshipProjects.length + 1;
 
   return (
     <section
       id="projects"
       ref={containerRef}
-      className="relative h-[560vh] bg-[#fff9d4] select-none"
+      className="relative h-[700vh] bg-[#fff9d4] select-none"
     >
       {/* pinned viewport stage */}
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         {/* progress indicators */}
         <div className="absolute top-[76px] sm:top-24 right-4 sm:right-12 z-50 flex items-center gap-1.5 sm:gap-2 p-1.5 sm:p-2 rounded-xl sm:rounded-2xl bg-[#fffdf5] border-2 border-[#0f172a] shadow-[2.5px_2.5px_0px_#0f172a] sm:shadow-[4px_4px_0px_#0f172a]">
-          {[0, 1, 2, 3].map((idx) => (
+          {Array.from({ length: totalSlides }).map((_, idx) => (
             <div
               key={idx}
-              className="h-2 sm:h-2.5 rounded-full bg-[#faeed1] border border-[#0f172a] overflow-hidden w-5 sm:w-10"
+              className="h-2 sm:h-2.5 rounded-full bg-[#faeed1] border border-[#0f172a] overflow-hidden w-4 sm:w-8"
             >
               <motion.div
                 className="h-full bg-[#0284c7]"
                 style={{
                   scaleX: useTransform(
                     smoothProgress,
-                    [idx * 0.25, (idx + 1) * 0.25],
+                    [idx * (1 / totalSlides), (idx + 1) * (1 / totalSlides)],
                     [0, 1],
                     { clamp: true }
                   )
@@ -76,6 +79,7 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ onOpenProject 
           <FlagshipSlideCard
             project={flagshipProjects[0]}
             index={0}
+            totalFlagships={flagshipProjects.length}
             yMotion="0%"
             depthLevel={1}
             onSelectProject={handleSelect}
@@ -86,6 +90,7 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ onOpenProject 
           <FlagshipSlideCard
             project={flagshipProjects[1]}
             index={1}
+            totalFlagships={flagshipProjects.length}
             yMotion={ySlide2}
             depthLevel={2}
             onSelectProject={handleSelect}
@@ -96,15 +101,27 @@ export const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ onOpenProject 
           <FlagshipSlideCard
             project={flagshipProjects[2]}
             index={2}
+            totalFlagships={flagshipProjects.length}
             yMotion={ySlide3}
             depthLevel={3}
             onSelectProject={handleSelect}
           />
         )}
 
+        {flagshipProjects[3] && (
+          <FlagshipSlideCard
+            project={flagshipProjects[3]}
+            index={3}
+            totalFlagships={flagshipProjects.length}
+            yMotion={ySlide4}
+            depthLevel={1}
+            onSelectProject={handleSelect}
+          />
+        )}
+
         {/* project index overview */}
         <motion.div
-          style={{ y: ySlide4, zIndex: 40 }}
+          style={{ y: ySlide5, zIndex: 50 }}
           className="absolute inset-0 w-full h-full bg-[#02587a] shadow-[0_-8px_24px_rgba(15,23,42,0.35)]"
         >
           <FilteredProjectDock

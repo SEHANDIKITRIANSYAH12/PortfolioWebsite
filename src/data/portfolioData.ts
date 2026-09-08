@@ -56,6 +56,16 @@ export const techStackData: TechItem[] = [
     projectLinks: ['pos-laravel', 'kelurahan-palmeriam', 'restapi-database-service']
   },
   {
+    name: 'React.js & Next.js',
+    category: 'frontend',
+    layer: 'client',
+    iconKey: 'nextdotjs',
+    color: '#000000',
+    roleTag: 'Full-Stack React Framework',
+    usageContext: 'Pengembangan web app modern dengan App Router, SSR/SSG, Server Actions, dan performa tinggi',
+    projectLinks: ['banknusantara', 'kelurahan-palmeriam']
+  },
+  {
     name: 'React.js',
     category: 'frontend',
     layer: 'client',
@@ -63,7 +73,7 @@ export const techStackData: TechItem[] = [
     color: '#0284c7',
     roleTag: 'Component UI',
     usageContext: 'Pembuatan antarmuka web berbasis komponen reaktif, custom hooks, dan state management modular',
-    projectLinks: ['kelurahan-palmeriam']
+    projectLinks: ['kelurahan-palmeriam', 'banknusantara']
   },
   {
     name: 'Tailwind CSS',
@@ -73,7 +83,7 @@ export const techStackData: TechItem[] = [
     color: '#06b6d4',
     roleTag: 'Utility Styling',
     usageContext: 'Desain responsif cepat berbasis utility classes, estetika modern, dan konsistensi token desain',
-    projectLinks: ['pos-laravel', 'kelurahan-palmeriam']
+    projectLinks: ['pos-laravel', 'kelurahan-palmeriam', 'banknusantara']
   },
   {
     name: 'Bootstrap',
@@ -124,11 +134,31 @@ export const techStackData: TechItem[] = [
     iconKey: 'springboot',
     color: '#6db33f',
     roleTag: 'Enterprise Backend',
-    usageContext: 'Implementasi konsep Object-Oriented Programming (OOP) tingkat lanjut dan arsitektur enterprise',
-    projectLinks: ['restapi-database-service']
+    usageContext: 'Implementasi konsep Object-Oriented Programming (OOP) tingkat lanjut, arsitektur enterprise, dan Spring Security',
+    projectLinks: ['banknusantara', 'restapi-database-service']
   },
 
   // database layer
+  {
+    name: 'PostgreSQL',
+    category: 'backend',
+    layer: 'database',
+    iconKey: 'postgresql',
+    color: '#2563eb',
+    roleTag: 'Advanced Relational',
+    usageContext: 'Penyimpanan data relasional tingkat lanjut, integritas transaksi ACID, indexing teroptimasi, dan konsistensi data',
+    projectLinks: ['banknusantara', 'restapi-database-service']
+  },
+  {
+    name: 'Redis',
+    category: 'backend',
+    layer: 'database',
+    iconKey: 'redis',
+    color: '#dc2626',
+    roleTag: 'In-Memory Cache & Session',
+    usageContext: 'Penyimpanan cache in-memory latensi rendah (<5ms), distributed rate limiting, token blacklist, dan session store',
+    projectLinks: ['banknusantara']
+  },
   {
     name: 'MySQL',
     category: 'backend',
@@ -138,16 +168,6 @@ export const techStackData: TechItem[] = [
     roleTag: 'Relational Core',
     usageContext: 'Perancangan skema relasional, normalisasi tabel, integritas transaksi ACID, dan relasi multi-tabel',
     projectLinks: ['pos-laravel', 'kelurahan-palmeriam', 'restapi-database-service']
-  },
-  {
-    name: 'PostgreSQL',
-    category: 'backend',
-    layer: 'database',
-    iconKey: 'postgresql',
-    color: '#2563eb',
-    roleTag: 'Advanced Relational',
-    usageContext: 'Penyimpanan data relasional tingkat lanjut, query kompleks, indexing teroptimasi, dan konsistensi data',
-    projectLinks: ['restapi-database-service']
   },
   {
     name: 'MongoDB (Dasar)',
@@ -169,7 +189,7 @@ export const techStackData: TechItem[] = [
     color: '#f97316',
     roleTag: 'Version Control',
     usageContext: 'Pelacakan versi kode sumber, alur branching kolaboratif, commit rapi, dan manajemen repositori',
-    projectLinks: ['pos-laravel', 'kelurahan-palmeriam', 'restapi-database-service']
+    projectLinks: ['banknusantara', 'pos-laravel', 'kelurahan-palmeriam', 'restapi-database-service']
   },
   {
     name: 'Postman',
@@ -179,7 +199,7 @@ export const techStackData: TechItem[] = [
     color: '#ff6c37',
     roleTag: 'API Testing & Docs',
     usageContext: 'Pengujian endpoint REST API, validasi request/response payload JSON, dan automasi tes integrasi',
-    projectLinks: ['kelurahan-palmeriam', 'restapi-database-service']
+    projectLinks: ['banknusantara', 'kelurahan-palmeriam', 'restapi-database-service']
   },
   {
     name: 'Figma (Dasar)',
@@ -189,7 +209,7 @@ export const techStackData: TechItem[] = [
     color: '#a259ff',
     roleTag: 'UI Wireframing',
     usageContext: 'Eksplorasi wireframe desain antarmuka web, inspeksi layout visual, dan kolaborasi desain UI/UX',
-    projectLinks: ['pos-laravel', 'kelurahan-palmeriam']
+    projectLinks: ['banknusantara', 'pos-laravel', 'kelurahan-palmeriam']
   },
   {
     name: 'XAMPP & VS Code',
@@ -204,6 +224,49 @@ export const techStackData: TechItem[] = [
 ];
 
 export const projectsData: Project[] = [
+  {
+    id: 'banknusantara',
+    title: 'BankNusantara',
+    subtitle: 'Platform Perbankan Digital & Transaksi Finansial (Spring Boot + Next.js + PostgreSQL + Redis)',
+    category: 'fullstack',
+    summary: 'Platform perbankan digital untuk transaksi harian dengan arsitektur enterprise Java Spring Boot, antarmuka Next.js reaktif, database transaksional PostgreSQL, serta caching Redis.',
+    description: 'BankNusantara adalah platform perbankan digital modern untuk transaksi finansial harian yang cepat, aman, dan transparan. Mengimplementasikan autentikasi JWT multi-role (Customer, Teller, Admin), pengelolaan saldo real-time (top-up, tarik tunai, mutasi rekening), transfer pintar antar-rekening, serta penjadwalan transaksi berulang. Dibangun dengan backend tangguh Spring Boot, UI Next.js, database relasional PostgreSQL dengan integritas transaksi ACID, dan Redis in-memory caching untuk kecepatan respons instan.',
+    architecture: [
+      'Backend enterprise modular menggunakan Java Spring Boot, Spring Security (BCrypt hashing), dan REST API',
+      'Antarmuka nasabah dan teller yang modern, responsif, dan interaktif berbasis Next.js, React, dan Tailwind CSS',
+      'Manajemen peran terenkripsi (Multi-Role JWT Authentication: Customer, Teller, Admin)',
+      'Basis data relasional PostgreSQL dengan transaksi ACID compliant dan audit log mutasi rekening',
+      'Redis In-Memory Cache untuk session storage, distributed rate limiting, dan sinkronisasi saldo real-time'
+    ],
+    stack: [
+      'Spring Boot',
+      'Next.js',
+      'PostgreSQL',
+      'Redis',
+      'Java',
+      'TypeScript',
+      'Tailwind CSS',
+      'JWT Auth',
+      'REST API',
+      'Docker'
+    ],
+    highlights: [
+      'Sistem autentikasi JWT aman multi-role (Customer, Teller, Admin) dengan enkripsi BCrypt',
+      'Fitur transfer pintar, top-up, tarik tunai, dan pelacakan mutasi rekening real-time',
+      'Integrasi backend enterprise Spring Boot, Next.js, basis data PostgreSQL, dan Redis'
+    ],
+    challenges: 'Memastikan konsistensi saldo rekening nasabah saat transaksi konkuren tinggi dan mengamankan endpoint perbankan dengan validasi idempotency dan token blacklist di Redis.',
+    role: 'Full-Stack Web Developer (Spring Boot & Next.js)',
+    githubUrl: 'https://github.com/SEHANDIKITRIANSYAH12',
+    imageUrl: '/projects/banknusantara-screenshot.png',
+    imageFit: 'cover',
+    featured: true,
+    metrics: [
+      { label: 'Role System', value: 'Customer/Teller/Admin' },
+      { label: 'Redis Cache', value: '<5ms Latency' },
+      { label: 'Basis Data', value: 'PostgreSQL ACID' }
+    ]
+  },
   {
     id: 'pos-laravel',
     title: 'Aplikasi Web Point of Sale (POS)',

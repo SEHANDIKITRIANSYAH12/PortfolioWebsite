@@ -14,6 +14,7 @@ import { AnimatedOceanSlideBackground } from './AnimatedOceanSlideBackground';
 interface FlagshipSlideCardProps {
   project: Project;
   index: number;
+  totalFlagships?: number;
   yMotion?: any;
   opacityMotion?: any;
   depthLevel?: 1 | 2 | 3;
@@ -23,12 +24,13 @@ interface FlagshipSlideCardProps {
 export const FlagshipSlideCard: React.FC<FlagshipSlideCardProps> = ({
   project,
   index,
+  totalFlagships = 4,
   yMotion = '0%',
   opacityMotion = 1,
-  depthLevel = (index + 1) as 1 | 2 | 3,
+  depthLevel = ((index % 3) + 1) as 1 | 2 | 3,
   onSelectProject
 }) => {
-  const zIndex = index === 0 ? 10 : index === 1 ? 20 : 30;
+  const zIndex = (index + 1) * 10;
 
   return (
     <motion.div
@@ -51,7 +53,7 @@ export const FlagshipSlideCard: React.FC<FlagshipSlideCardProps> = ({
         </div>
 
         <div className="hidden sm:block text-xs font-mono font-black text-[#0f172a] px-3.5 py-1.5 rounded-xl bg-[#fffdf5] border-2 border-[#0f172a] shadow-[3px_3px_0px_#0f172a]">
-          FLAGSHIP {index + 1} / 3
+          FLAGSHIP {index + 1} / {totalFlagships}
         </div>
       </div>
 

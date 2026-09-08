@@ -33,6 +33,7 @@ import {
   SiPhp,
   SiSpringboot,
   SiMongodb,
+  SiRedis,
   SiPostman,
   SiFigma,
   SiXampp
@@ -52,6 +53,7 @@ const iconMap: Record<string, React.FC<{ size?: number; color?: string; classNam
   nodejs: SiNodedotjs,
   mysql: SiMysql,
   postgresql: SiPostgresql,
+  redis: SiRedis,
   supabase: SiSupabase,
   firebase: SiFirebase,
   prisma: SiPrisma,
