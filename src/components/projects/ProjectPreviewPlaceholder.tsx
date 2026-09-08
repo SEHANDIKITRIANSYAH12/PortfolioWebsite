@@ -45,8 +45,10 @@ export const ProjectPreviewPlaceholder: React.FC<ProjectPreviewPlaceholderProps>
             alt={project.title}
             onError={() => setImageError(true)}
             className={`w-full h-full ${
-              project.imageFit === 'contain' || isMobile
+              isMobile
                 ? 'object-contain object-center p-3 sm:p-4'
+                : project.imageFit === 'contain'
+                ? 'object-contain object-center'
                 : 'object-cover object-top'
             } transition-transform duration-500 group-hover/preview:scale-[1.02]`}
           />

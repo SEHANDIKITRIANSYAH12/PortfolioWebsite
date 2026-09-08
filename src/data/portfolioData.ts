@@ -236,8 +236,8 @@ export const projectsData: Project[] = [
     challenges: 'Menjamin integritas data transaksi saat pergerakan stok berlangsung simultan dan mengoptimalkan query MySQL agar proses pencarian produk kasir tetap cepat.',
     role: 'Full-Stack Web Developer',
     githubUrl: 'https://github.com/SEHANDIKITRIANSYAH12',
-    imageUrl: '/projects/pos-system.svg',
-    imageFit: 'contain',
+    imageUrl: '/projects/pos-screenshot.png',
+    imageFit: 'cover',
     featured: true,
     metrics: [
       { label: 'Tugas Akhir', value: 'Univ. Gunadarma' },
@@ -277,8 +277,8 @@ export const projectsData: Project[] = [
     challenges: 'Merancang alur dialog chatbot yang ramah bagi berbagai kalangan warga serta mengintegrasikan panel admin dengan database relasional MySQL agar pengajuan surat tertata rapi.',
     role: 'Full-Stack Web Developer (Proyek Mandiri)',
     githubUrl: 'https://github.com/SEHANDIKITRIANSYAH12',
-    imageUrl: '/projects/kelurahan-chatbot.svg',
-    imageFit: 'contain',
+    imageUrl: '/projects/kelurahan-screenshot.png',
+    imageFit: 'cover',
     featured: true,
     metrics: [
       { label: 'Tahun Proyek', value: '2024' },
